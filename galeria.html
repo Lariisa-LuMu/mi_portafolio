@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Mis Trabajos</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Galería de Mis Trabajos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="galeria">
+        <h2>Mis Proyectos</h2>
+        <div class="galeria-container">
+            <div class="galeria-item">
+                <img src="base de datos.jpg" alt="Experiencia en crear bases de datos en phpMyAdmin." />
+                <p>Tengo experiencia creando bases de datos en phpMyAdmin.</p>
+            </div>
+            <div class="galeria-item">
+                <img src="pagina web.jpg" alt="Disfruto crear páginas web usando HTML." />
+                <p>Me gusta crear páginas web en HTML y CSS.</p>
+            </div>
+            <div class="galeria-item">
+                <img src="redes.jpg" alt="Sé activar redes usando el simulador de Packet Tracer." />
+                <p>Sé activar redes usando simuladores como el de Cisco Packet Tracer.</p>
+            </div>
+            <div class="galeria-item">
+                <img src="soldadura.jpg" alt="He dado mantenimiento y soldado hardware de laptops." />
+                <p>He dado mantenimiento y soldado hardware de laptops.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Larissa Lugo</p>
+    </footer>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .galeria-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .galeria-item {
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: white;
+            width: calc(25% - 20px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .galeria-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        .galeria-item p {
+            padding: 10px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .galeria-item {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .galeria-item {
+                width: 100%;
+            }
+        }
+    </style>
+</body>
+</html>
